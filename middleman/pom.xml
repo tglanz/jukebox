@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.jukebox.middleman</groupId>
+	<artifactId>middleman</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+    <properties>
+		<kurentoVersion>6.10.0</kurentoVersion>
+	</properties>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.6.RELEASE</version>
+	</parent>
+
+	<dependencies>
+        <!-- spring -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-websocket</artifactId>
+        </dependency>
+
+        <!-- kurento -->
+        <dependency>
+			<groupId>org.kurento</groupId>
+			<artifactId>kurento-client</artifactId>
+            <version>${kurentoVersion}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.kurento</groupId>
+			<artifactId>kurento-utils-js</artifactId>
+            <version>${kurentoVersion}</version>
+		</dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
