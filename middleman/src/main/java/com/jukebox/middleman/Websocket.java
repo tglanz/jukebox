@@ -1,6 +1,6 @@
 package com.jukebox.middleman;
 
-import com.jukebox.middleman.handlers.Handler;
+import com.jukebox.middleman.handlers.AudioPlayerHandler;
 
 // spring
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,7 +15,7 @@ public class Websocket implements WebSocketConfigurer {
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry){
         // Names should change once domains kicks in
-        registry.addHandler(new Handler(), "/handler");
+        registry.addHandler(new AudioPlayerHandler(), "/audio");
     }
 
 }
