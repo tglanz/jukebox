@@ -34,11 +34,11 @@
 			<artifactId>kurento-client</artifactId>
             <version>${kurentoVersion}</version>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.kurento</groupId>
 			<artifactId>kurento-utils-js</artifactId>
             <version>${kurentoVersion}</version>
-		</dependency>
+		</dependency> -->
 
     </dependencies>
 
