@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "install": "^0.13.0",
     "kurento-utils": "^6.11.1",
     "normalize.css": "^8.0.1",
+    "npm": "^6.10.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "webrtc-adapter": "^7.2.8"
   },
   "scripts": {
     "start": "react-scripts start",
