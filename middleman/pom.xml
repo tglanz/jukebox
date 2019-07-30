@@ -7,15 +7,15 @@
 	<artifactId>middleman</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-    <properties>
-		<kurentoVersion>6.10.0</kurentoVersion>
-	</properties>
-
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.1.6.RELEASE</version>
 	</parent>
+
+    <properties>
+		<kurentoVersion>6.10.0</kurentoVersion>
+	</properties>
 
 	<dependencies>
         <!-- spring -->
